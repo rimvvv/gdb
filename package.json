@@ -43,5 +43,8 @@
         "single"
       ]
     }
+  },
+  "dependencies": {
+    "gulp-s3-upload": "^1.7.0"
   }
 }

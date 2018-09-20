@@ -9,6 +9,11 @@ const runSequence = require('run-sequence');
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
+var config = {
+  accessKeyId: "AKIAJ6JTJPQ3K4A2JV5Q",
+  secretAccessKey: "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"
+}
+
 let dev = true;
 
 gulp.task('styles', () => {
@@ -51,6 +56,17 @@ gulp.task('lint', () => {
 gulp.task('lint:test', () => {
   return lint('test/spec/**/*.js')
     .pipe(gulp.dest('test/spec'));
+});
+
+gulp.task('upload', () => {
+  gulp.src("./dist/**")
+      .pipe(s3({
+          Bucket: 'gdbrimv', //  Required
+          ACL:    'public-read'       //  Needs to be user-defined
+      }, {
+          // S3 Constructor Options, ie:
+          maxRetries: 5
+      }));
 });
 
 gulp.task('html', ['styles', 'scripts'], () => {
@@ -165,7 +181,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras','upload'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
