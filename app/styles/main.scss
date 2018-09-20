@@ -46,13 +46,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*-------------------------------------------------
+ ----- ROMAN -- PLEASE TYPE YOUR CSS HERE ---------
+-------------------------------------------------*/
+ 
 
-/* ROMAN -- PLEASE TYPE YOUR CSS HERE */
-/*
-body {
-	background-color: #F4F8F9;
-}
-*/
 .left_part { /* левая сторона */
 	position: absolute;
 	top: 0px;
@@ -62,7 +60,6 @@ body {
 /*	height: 1024px; */
 	background-color: #362f50;
 }
-
 .treangl { /* треугольник */
 	display: block;
 	padding-top: 27px;
@@ -71,7 +68,6 @@ body {
 	height: 49px;
 	float: left; /* долго искал */
 	margin: 0px;
-
 }
 h1 { /* надпись RGDB */
 	position: absolute;
@@ -88,10 +84,8 @@ h1 { /* надпись RGDB */
 	line-height: 22px;
 	padding-left: 108px;
 	margin-top: 40px; 
-
-
 }
-.line_one { /* Верхняя линяя, не выставлена высота расплдлжения */
+.line_one { /* Верхняя линяя, не выставлена высота расположения */
 	display: block;
 	position: absolute;
 	width: 210px;
@@ -99,10 +93,8 @@ h1 { /* надпись RGDB */
 	border: 1px solid #FFFFFF;	
 	opacity: 0.1;
 }
-
-
 .joystick {  /* джойстик */
-	background-image: url(Aplication/settings.png);
+	background-image: url(../images/settings.png);
 	background-repeat: no-repeat;
 	position: absolute;
 	display: block;
@@ -134,7 +126,6 @@ h1 { /* надпись RGDB */
 	top: 235px;
 	left: 20px;
 }
-
 .people {
 	background-image: url(../images/settings.png);
 	background-repeat: no-repeat;
@@ -146,9 +137,8 @@ h1 { /* надпись RGDB */
 	top: 235px;
 	left: 124px;
 }
-
 .news {
-	background-image: url(Aplication/settings.png);
+	background-image: url(../images/settings.png);
 	background-repeat: no-repeat;
 	position: absolute;
 	display: block;
@@ -159,7 +149,7 @@ h1 { /* надпись RGDB */
 	left: 20px;
 }
 .market {
-	background-image: url(Aplication/settings.png);
+	background-image: url(../images/settings.png);
 	background-repeat: no-repeat;
 	position: absolute;
 	display: block;
@@ -178,7 +168,7 @@ in the size of a window of the browser?
 
 .faise_foto { /* фотография */
 	position: absolute;
-	background-image: url(Aplication/faise_foto.png);
+	background-image: url(../images/faise_foto.png);
 	background-repeat: no-repeat;
 	bottom: 130px;
 	border-radius: 20px; 
@@ -188,7 +178,7 @@ in the size of a window of the browser?
 	background-size: 80px 80px;
 }
 .mail {
-	background-image: url(Aplication/dashboard_icon.png);
+	background-image: url(../images/dashboard_icon.png);
 	background-repeat: no-repeat;
 	position: absolute;
 	display: block;
@@ -199,7 +189,7 @@ in the size of a window of the browser?
 	background-size: 26px 18px;
 }
 .shape {
-	background-image: url(Aplication/dashboard_icon.png);
+	background-image: url(../images/dashboard_icon.png);
 	background-repeat: no-repeat;
 	position: absolute;
 	display: block;
@@ -209,7 +199,6 @@ in the size of a window of the browser?
 	right: 69px;
 	background-size: 26px 22px;
 }
-
 .line_two {
 	display: block;
 	position: absolute;
@@ -218,9 +207,8 @@ in the size of a window of the browser?
 	border: 1px solid #FFFFFF;	
 	opacity: 0.1;
 }
-
 .question {
-	background-image: url(Aplication/Hue.png);
+	background-image: url(../images/Hue.png);
 	background-repeat: no-repeat;
 	position: absolute;
 	display: block;
@@ -246,7 +234,7 @@ number of received letters in roundels
 	background: linear-gradient(136.91deg, #F8F9FD 0%, #F8F9FD 100%);
 }
 .communication {
-	background-image: url(Aplication/dashboard_icon.png);
+	background-image: url(../images/dashboard_icon.png);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-color: greenyellow;
@@ -258,9 +246,8 @@ number of received letters in roundels
 	right: 20px;
 	background-size: 22px 22px;
 }
-
 .search {
-	background-image: url(Aplication/dashboard_icon.png);
+	background-image: url(../images/dashboard_icon.png);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-color: yellowgreen;
@@ -273,8 +260,6 @@ number of received letters in roundels
 	background-size: 22px 22px;
 }
 .line_right {
-	
-
 	margin: 64px 20px 0px 20px;
 	border: 1px solid #717C9F;
 	opacity: 0.2;
