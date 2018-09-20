@@ -9,11 +9,6 @@ const runSequence = require('run-sequence');
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
-var config = {
-  accessKeyId: "AKIAIXHAGC4ESFLNGS5A",
-  secretAccessKey: "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"
-}
-var s3 = require('gulp-s3-upload')(config);
 
 let dev = true;
 
@@ -182,7 +177,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras','upload'], () => {
+gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
