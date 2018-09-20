@@ -10,9 +10,10 @@ const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
 var config = {
-  accessKeyId: "AKIAJ6JTJPQ3K4A2JV5Q",
-  secretAccessKey: "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"
+  accessKeyId: "AKIAIXHAGC4ESFLNGS5A",
+  secretAccessKey: "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"
 }
+var s3 = require('gulp-s3-upload')(config);
 
 let dev = true;
 
